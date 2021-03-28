@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebDoc Editor | Create and Edit web compatible documents</title>
+  <!-- <script src="https://kit.fontawesome.com/b3bca998dc.js" crossorigin="anonymous"></script> -->
+  <script defer src="/js/jquery-3.6.0.slim.min.js"></script>
+  <script defer src="./set-get-caret-position/jquery.caret.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js" type="module"></script>
+</head>
+<body>
+  
+  <!-- <nav>this is the nav empty for now</nav> -->
+
+  <header id="tools">
+    <div id="burgerLeft">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+    <div id="fontOptions">
+      <input type="text" value="Arial">
+      <button class="caret">
+        &blacktriangledown;
+      </button>
+      <ul class="fonts">
+        <!-- <li><button>Sans Serif</button></li>
+        <li><button>Arial</button></li>
+        <li><button>Verdana</button></li> -->
+      </ul>
+    </div>
+    <div id="sizeOptions">
+      <input type="text" pattern='[0-9]+' value=18 id="inputSize">
+      <button class="caret">
+        &blacktriangledown;
+      </button>
+      <ul class="fontSizes">
+        <li><button>11</button></li>
+        <li><button>12</button></li>
+        <li><button>14</button></li>
+      </ul>
+    </div>
+    <!-- Color Option -->
+    <div id="colorOption">
+      <input type="color" name="color" id="colorPicker">
+    </div>
+    <!-- Color Option -->
+    <div id="bgOption">
+      <input type="color" name="color" id="bgPicker">
+    </div>
+    <!-- Formatting -->
+    <div class="btns">
+      <button id="bold">B</button>
+      <button id="italic">I</button>
+      <button id="underline">U</button>
+    </div>
+    <div class="layout">
+      <button id="justify">J<i class="fas fa-align-justify"></i></button>
+      <button id="align-right">R<i class="fas fa-align-right"></i></button>
+      <button id="align-center">V<i class="fas fa-align-center"></i></button>
+      <button id="align-left">L<i class="fas fa-align-left"></i></button>
+      <!-- <button><i class="fas fa-sliders-h"></i></button> -->
+    </div>
+    <div id="burgerRight">
+      <div class="dot1">.</div>
+      <div class="dot2">.</div>
+      <div class="dot3">.</div>
+    </div>
+  </header>
+
+  <main>
+    <div class="web-document" contenteditable="true"></div>
+  </main>
+
+  <footer>
+    <!-- Stats -->
+    <span id="loc">row: 0, col: 0</span>
+    <!-- <p>Developed By <span style="color: rgb(156, 172, 187); font-weight: bold; text-transform: uppercase">Spiff Jekey-Green</span></p> -->
+    <p>&copy; All Rights Reserved. WebDoc Editor</p>
+  </footer>
+  
+</body>
+</html>
